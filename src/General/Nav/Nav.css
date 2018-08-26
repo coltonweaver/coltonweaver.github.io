@@ -1,5 +1,29 @@
 .Nav {
     height: 5vh;
     width: 100%;
+    vertical-align: -webkit-baseline-middle;
     background-color: black;
+}
+
+.NavTitle {
+    position: relative;
+    float: left;
+    color: white;
+    font-size: 400%;
+}
+
+.Link {
+    position: relative;
+    float: right;
+    padding: 10px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 300%;
+}
+
+.Link:hover {
+    text-decoration: underline;
 }
