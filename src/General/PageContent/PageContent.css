@@ -1,7 +1,6 @@
 .Nav {
     height: 7.5vh;
     width: 100%;
-    vertical-align: -webkit-baseline-middle;
     background-color: black;
 }
 
@@ -9,22 +8,34 @@
     position: relative;
     float: left;
     color: white;
-    padding: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
     font-size: 4em;
 }
 
-.Link {
+.Button {
     position: relative;
     float: right;
-    padding: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     background: none;
     border: none;
     cursor: pointer;
     color: white;
-    font-size: 300%;
+    font-size: 4em;
     text-decoration: none;
 }
 
-.Link:hover {
+.Button:hover {
     text-decoration: underline;
+}
+
+.Content {
+    height: 92.5vh;
+    width: 100%;
+}
+
+.ViewContent {
+    height: 100%;
+    width: 100%;
 }

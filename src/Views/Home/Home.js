@@ -8,7 +8,10 @@ class Home extends Component {
         return(
             <div className="Home">
                 <Header image={HomeBanner} />
-                <h1 className="HomeTitle">Developer</h1>
+                <h1 className="HomeTitle">Welcome to my Website</h1>
+                <h2 className="HomeContent">
+                    Todo: Implement View
+                </h2>
             </div>
         );
     }

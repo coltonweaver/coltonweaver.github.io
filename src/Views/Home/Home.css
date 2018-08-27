@@ -8,4 +8,10 @@
 .HomeTitle {
     font-size: 300%;
     color: white;
+    text-decoration: underline;
+}
+
+.HomeContent {
+    font-size: 200%;
+    color: white;
 }
