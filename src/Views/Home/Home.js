@@ -8,6 +8,7 @@ class Home extends Component {
         return(
             <div className="Home">
                 <Header image={HomeBanner} />
+                <h1 className="HomeTitle">Developer</h1>
             </div>
         );
     }
