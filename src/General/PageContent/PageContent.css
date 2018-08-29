@@ -1,5 +1,5 @@
 .Nav {
-    height: 7.5vh;
+    height: 8vh;
     width: 100%;
     background-color: black;
 }
@@ -8,21 +8,21 @@
     position: relative;
     float: left;
     color: white;
-    margin-left: 20px;
-    margin-top: 15px;
-    font-size: 4em;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1em;
 }
 
 .Button {
     position: relative;
     float: right;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
     background: none;
     border: none;
     cursor: pointer;
     color: white;
-    font-size: 4em;
+    font-size: 0.75em;
     text-decoration: none;
 }
 
@@ -31,8 +31,9 @@
 }
 
 .Content {
-    height: 92.5vh;
+    height: 92vh;
     width: 100%;
+    background-color: black;
 }
 
 .ViewContent {
