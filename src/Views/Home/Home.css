@@ -1,4 +1,6 @@
 .Home {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -6,12 +8,7 @@
 }
 
 .HomeTitle {
-    font-size: 300%;
+    font-size: 2rem;
     color: white;
     text-decoration: underline;
-}
-
-.HomeContent {
-    font-size: 200%;
-    color: white;
 }

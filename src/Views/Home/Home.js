@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import Header from '../../General/Header/Header';
+import ColtonPic from '../../Images/colton.jpg';
 import './Home.css';
 
 class Home extends Component {
     render() {
         return(
             <div className="Home">
-                <h1 className="HomeTitle"></h1>
-                <h2 className="HomeContent">
-                </h2>
+                <Header image={ColtonPic} />
+                <h1 className="HomeTitle">Welcome to My Website</h1>
             </div>
         );
     }
