@@ -4,8 +4,8 @@ import './Contact.css';
 class Contact extends Component {
     render() {
         return(
-            <div>
-                {/* TODO: Implement View */}
+            <div className="ContactContent">
+                TODO: Implement Contact
             </div>
         );
     }

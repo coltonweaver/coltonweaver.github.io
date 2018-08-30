@@ -10,7 +10,7 @@
     color: white;
     margin-left: 0.5rem;
     margin-top: 0.5rem;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .Button {
@@ -22,7 +22,7 @@
     border: none;
     cursor: pointer;
     color: white;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     text-decoration: none;
 }
 

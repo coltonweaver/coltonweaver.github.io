@@ -5,6 +5,7 @@
 
 .Image {
     width: auto;
+    max-width: 1000px;
     height: 600px;
     flex: 1;
     display: block;
