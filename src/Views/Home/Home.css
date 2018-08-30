@@ -1,10 +1,24 @@
 .Home {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    height: 100%;
+}
+
+.HomeContent {
+    float: left;
+    width: 70%;
     height: 100%;
     text-align: center;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.SideMargin {
+    float: left;
+    background-color: grey;
+    width: 15%;
+    max-width: 15%;
+    height: 100%;
 }
 
 .HomeTitle {

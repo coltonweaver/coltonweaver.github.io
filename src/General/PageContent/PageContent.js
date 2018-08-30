@@ -40,10 +40,10 @@ class PageContent extends Component {
                 </div>
                 <div className="Content">
                     <SwipeableViews className="ViewContent" index={index} onChangeIndex={this.handleChangeIndex}>
-                        <Home/>
-                        <About/>
-                        <Experience/>
-                        <Contact/>
+                        <Home />
+                        <About />
+                        <Experience />
+                        <Contact />
                     </SwipeableViews>
                 </div>
             </div>

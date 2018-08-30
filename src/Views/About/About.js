@@ -4,8 +4,12 @@ import './About.css';
 class About extends Component {
     render() {
         return(
-            <div className="AboutContent">
-                TODO: Implement About
+            <div className="AboutParent">
+                <div className="SideMargin"></div>
+                <div className="AboutContent">
+                    <h1 className="ContentHeader">Interests</h1>
+                </div>
+                <div className="SideMargin"></div>
             </div>
         );
     }

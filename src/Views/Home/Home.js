@@ -7,8 +7,12 @@ class Home extends Component {
     render() {
         return(
             <div className="Home">
-                <Header image={ColtonPic} />
-                <h1 className="HomeTitle">Welcome to My Website</h1>
+                <div className="SideMargin"></div>
+                <div className="HomeContent">
+                    <Header image={ColtonPic} />
+                    <h1 className="HomeTitle">Welcome to My Website</h1>
+                </div>
+                <div className="SideMargin"></div>
             </div>
         );
     }

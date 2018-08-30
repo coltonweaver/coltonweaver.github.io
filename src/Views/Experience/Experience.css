@@ -1,3 +1,11 @@
-.ExperienceContent {
+.ExperienceParent {
+    height: 100%;
+    width: 100%;
     color: white;
+}
+
+.ExperienceContent {
+    height: 100%;
+    width: 70%;
+    float: left;
 }
