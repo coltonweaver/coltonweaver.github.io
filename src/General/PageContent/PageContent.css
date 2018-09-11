@@ -1,8 +1,7 @@
 .Nav {
-    height: 8vh;
+    height: auto;
     width: 100%;
     background-color: black;
-    vertical-align: middle;
 }
 
 .NavTitle {
@@ -10,29 +9,29 @@
     float: left;
     color: white;
     font-size: 1rem;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
+    padding: 0.5rem;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .Button {
     position: relative;
     float: right;
-    margin-right: 0.5rem;
-    margin-top: 0.5rem;
+    padding: 0.5rem;
     background: none;
     border: none;
     cursor: pointer;
     color: white;
     font-size: 1rem;
-    text-decoration: underline;
 }
 
 .Button:hover {
     color: grey;
+    text-decoration: underline;
 }
 
 .Content {
-    height: 92vh;
+    height: 50%;
     width: 100%;
     background-color: black;
 }

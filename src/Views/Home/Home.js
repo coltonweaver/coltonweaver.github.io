@@ -10,7 +10,11 @@ class Home extends Component {
                 <div className="SideMargin"></div>
                 <div className="HomeContent">
                     <Header image={ColtonPic} />
-                    <h1 className="HomeTitle">Welcome to My Website</h1>
+                    <h1 className="HomeTitle">Welcome</h1>
+                    <div>Student</div>
+                    <div>Software Developer</div>
+                    <div>Coffee Lover</div>
+                    <div>Photographer</div>
                 </div>
                 <div className="SideMargin"></div>
             </div>

@@ -14,4 +14,11 @@
 
 .ContentHeader {
     font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.AboutText {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }

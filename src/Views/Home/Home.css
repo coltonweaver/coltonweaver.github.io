@@ -11,6 +11,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .SideMargin {
@@ -23,6 +24,5 @@
 
 .HomeTitle {
     font-size: 2rem;
-    color: white;
     text-decoration: underline;
 }
