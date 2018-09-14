@@ -30,7 +30,7 @@ class PageContent extends Component {
         const { index } = this.state;
 
         return(
-            <div>
+            <div className="PageContent">
                 <div className="Nav">
                     <div className="NavTitle">Colton Blake Weaver</div>
                     <button className="Button" onClick={() => this.handleClick(3)}>Contact</button>
@@ -38,14 +38,12 @@ class PageContent extends Component {
                     <button className="Button" onClick={() => this.handleClick(1)}>About</button>
                     <button className="Button" onClick={() => this.handleClick(0)}>Home</button>
                 </div>
-                <div className="Content">
-                    <SwipeableViews className="ViewContent" index={index} onChangeIndex={this.handleChangeIndex}>
-                        <Home />
-                        <About />
-                        <Experience />
-                        <Contact />
-                    </SwipeableViews>
-                </div>
+                <SwipeableViews className="ViewContent" index={index} onChangeIndex={this.handleChangeIndex}>
+                    <Home />
+                    <About />
+                    <Experience />
+                    <Contact />
+                </SwipeableViews>
             </div>
         );
     }

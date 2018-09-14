@@ -7,16 +7,14 @@ class Home extends Component {
     render() {
         return(
             <div className="Home">
-                <div className="SideMargin"></div>
                 <div className="HomeContent">
                     <Header image={ColtonPic} />
                     <h1 className="HomeTitle">Welcome</h1>
-                    <div>Student</div>
-                    <div>Software Developer</div>
-                    <div>Coffee Lover</div>
-                    <div>Photographer</div>
+                    <div className="HomeText">Student</div>
+                    <div className="HomeText">Software Developer</div>
+                    <div className="HomeText">Coffee Lover</div>
+                    <div className="HomeText">Photographer</div>
                 </div>
-                <div className="SideMargin"></div>
             </div>
         );
     }

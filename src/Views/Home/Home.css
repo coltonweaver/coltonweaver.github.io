@@ -1,28 +1,28 @@
 .Home {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: grey;
 }
 
 .HomeContent {
-    float: left;
-    width: 70%;
-    height: 100%;
+    width: auto;
+    max-width: 1250px;
+    height: 100vh;
     text-align: center;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
     color: white;
 }
 
-.SideMargin {
-    float: left;
-    background-color: grey;
-    width: 15%;
-    max-width: 15%;
-    height: 100%;
+.HomeTitle {
+    font-size: calc(32px + 1vw);
+    text-decoration: underline;
 }
 
-.HomeTitle {
-    font-size: 2rem;
-    text-decoration: underline;
+.HomeText {
+    font-size: calc(16px + 1vw);
 }

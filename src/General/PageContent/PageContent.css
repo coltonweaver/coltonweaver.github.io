@@ -1,21 +1,26 @@
+.PageContent {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .Nav {
-    height: auto;
+    float: left;
+    height: 4.85%;
     width: 100%;
     background-color: black;
+    border-bottom: 1px solid grey;
 }
 
 .NavTitle {
-    position: relative;
-    float: left;
     color: white;
-    font-size: 1rem;
-    padding: 0.5rem;
-    display: table-cell;
+    font-size: calc(16px + 1vw);
+    display: inline-block;
     vertical-align: middle;
+    margin-left: 1%;
 }
 
 .Button {
-    position: relative;
     float: right;
     padding: 0.5rem;
     background: none;
@@ -30,13 +35,14 @@
     text-decoration: underline;
 }
 
-.Content {
-    height: 50%;
-    width: 100%;
-    background-color: black;
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    .Button {
+        display: none;
+    }
 }
 
 .ViewContent {
-    height: 100%;
+    float: left;
+    height: auto;
     width: 100%;
 }
