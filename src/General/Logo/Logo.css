@@ -1,0 +1,13 @@
+.Logo {
+    height: auto;
+    width: auto;
+}
+
+.LogoImage {
+    width: auto;
+    height: auto;
+    flex: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

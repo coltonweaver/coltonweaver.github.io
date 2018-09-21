@@ -33,10 +33,12 @@ class PageContent extends Component {
             <div className="PageContent">
                 <div className="Nav">
                     <div className="NavTitle">Colton Blake Weaver</div>
-                    <button className="Button" onClick={() => this.handleClick(3)}>Contact</button>
-                    <button className="Button" onClick={() => this.handleClick(2)}>Experience</button>
-                    <button className="Button" onClick={() => this.handleClick(1)}>About</button>
-                    <button className="Button" onClick={() => this.handleClick(0)}>Home</button>
+                    <div className="Buttons">
+                        <button className="Button" onClick={() => this.handleClick(3)}>Contact</button>
+                        <button className="Button" onClick={() => this.handleClick(2)}>Experience</button>
+                        <button className="Button" onClick={() => this.handleClick(1)}>About</button>
+                        <button className="Button" onClick={() => this.handleClick(0)}>Home</button>
+                    </div>
                 </div>
                 <SwipeableViews className="ViewContent" index={index} onChangeIndex={this.handleChangeIndex}>
                     <Home />

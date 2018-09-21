@@ -27,5 +27,15 @@
     font-size: calc(16px + 1vw);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    padding-bottom: 20px;
+    padding-bottom: calc(10px + 1vw);
+}
+
+@media screen and (min-width: 1250px) {
+    .ContentHeader {
+        font-size: 48px;
+    }
+
+    .AboutText {
+        font-size: 32px;
+    }
 }

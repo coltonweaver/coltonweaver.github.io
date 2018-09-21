@@ -1,11 +1,16 @@
 .ExperienceParent {
-    height: 100%;
     width: 100%;
-    color: white;
+    height: 100vh;
+    background-color: grey;
 }
 
 .ExperienceContent {
-    height: 100%;
-    width: 70%;
-    float: left;
+    width: auto;
+    max-width: 1250px;
+    height: auto;
+    min-height: 100vh;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
 }
