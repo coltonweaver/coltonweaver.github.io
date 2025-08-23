@@ -13,10 +13,14 @@ export default function Home() {
 
         <div className="mt-8">
           <h2 className="font-heading text-3xl sm:text-[44px]">Colton Weaver (cbw)</h2>
-          <p className="font-base mt-6 text-base sm:text-xl">
-            My name is Colton Weaver and this is my personal website. I am a Senior Software Engineer living in New York City, working at Stripe.
-            I work on what we call the "Compartments Graph", a service that is the source of truth for all entity relationships in the Stripe ecosystem
-            and powers products such as Stripe Organizations and Customer and Payment Method Sharing among many others.
+          <p className="font-base mt-6 text-base sm:text-l">
+            My name is Colton Weaver and this is my personal website. I am a Software Engineer living in New York City, working at Stripe.<br /><br />
+
+            My primary specialites are in Distributed Systems, Domain/Data and API Modeling, and Operational Excellence. My role at Stripe is that of a Tech Lead
+            in the Organizations and Auth Platform, where I lead a team that is responsible for building and maintaining the "Compartments Graph", which is a service
+            responsible for being the source of truth for all account (merchant, customer, recipient, etc.) relationships at Stripe.<br /><br />
+
+            If you'd like to connect, you can reach me via one of the provided links on this page. Thanks for visiting!
           </p>
         </div>
       </div>
