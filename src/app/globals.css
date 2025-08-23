@@ -8,7 +8,7 @@
   --secondary-background: oklch(100% 0 0);
   --foreground: oklch(0% 0 0);
   --main-foreground: oklch(0% 0 0);
-  --main: oklch(67.47% 0.1726 259.49);
+  --main: oklch(95.308% 0.19083 116.738);
   --border: oklch(0% 0 0);
   --ring: oklch(0% 0 0);
   --overlay: oklch(0% 0 0 / 0.8);
@@ -16,14 +16,14 @@
 }
 
 .dark {
-  --background: oklch(29.23% 0.0626 270.49);
+  --background: oklch(38.218% 0.04767 193.356);
   --secondary-background: oklch(23.93% 0 0);
   --foreground: oklch(92.49% 0 0);
   --main-foreground: oklch(0% 0 0);
-  --main: oklch(67.47% 0.1726 259.49);
+  --main: oklch(89.52% 0.17119 162.378);
   --border: oklch(0% 0 0);
   --ring: oklch(100% 0 0);
-  --shadow: 4px -4px 0px 0px var(--border);
+  --shadow: 6px -6px 0px 0px var(--border);
 }
 
 @theme inline {
