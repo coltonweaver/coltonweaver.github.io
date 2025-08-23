@@ -3,6 +3,7 @@ import LINKS from '@/links'
 export default function Home() {
   return (
     <div className="text-foreground relative mx-auto h-full w-[700px] max-w-full p-8 md:p-16 xl:w-[1400px]">
+      <link rel="icon" type="image/png" sizes="48x48" href="./favicon.ico"></link>
       <div className="mb-12 w-full xl:fixed xl:mb-0 xl:w-[500px]">
         <img
           className="border-border h-28 w-28 rounded-full border-2 xl:h-[184px] xl:w-[184px]"
