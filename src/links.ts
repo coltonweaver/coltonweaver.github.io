@@ -18,17 +18,17 @@ const websites = [
 ]
 
 const LINKS: { [key in SocialMedia]: Link } = {
-  github: {
-    title: 'Github',
-    icon: github,
-    link: 'https://github.com/coltonweaver',
-    text: '@coltonweaver',
-  },
   linkedin: {
     title: 'Linkedin',
     icon: linkedin,
     link: 'https://www.linkedin.com/in/colton-weaver/',
     text: '@colton-weaver',
+  },
+  github: {
+    title: 'Github',
+    icon: github,
+    link: 'https://github.com/coltonweaver',
+    text: '@coltonweaver',
   },
   hackernews: {
     title: 'Hacker News',
