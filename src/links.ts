@@ -1,6 +1,7 @@
 import github from '../public/icons/github.svg'
 import linkedin from '../public/icons/linkedin.svg'
 import hackernews from '../public/icons/hackernews.svg'
+import bluesky from '../public/icons/bluesky.svg'
 
 type SocialMedia = (typeof websites)[number]
 
@@ -15,6 +16,7 @@ const websites = [
   'github',
   'linkedin',
   'hackernews',
+  'bluesky',
 ]
 
 const LINKS: { [key in SocialMedia]: Link } = {
@@ -36,6 +38,12 @@ const LINKS: { [key in SocialMedia]: Link } = {
     link: 'https://news.ycombinator.com/user?id=coltonweaver',
     text: '@coltonweaver',
   },
+  bluesky: {
+    title: 'Bluesky',
+    icon: bluesky,
+    link: 'https://bsky.app/profile/coltonweaver.bsky.social',
+    text: '@coltonweaver'
+  }
 }
 
 export default LINKS
