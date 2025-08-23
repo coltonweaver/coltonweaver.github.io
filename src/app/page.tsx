@@ -15,9 +15,7 @@ export default function Home() {
           <p className="font-base mt-6 text-base sm:text-xl">
             My name is Colton Weaver and this is my personal website. I am a Senior Software Engineer living in New York City, working at Stripe.
             I work on what we call the "Compartments Graph", a service that is the source of truth for all entity relationships in the Stripe ecosystem
-            and powers products such as Stripe Organizations, Customer and Payment Method Sharing, and V2 Accounts.
-
-            This website uses the <a href='https://github.com/neobrutalism-templates/bento'>Bento template</a> from the neobrutalism-templates group.
+            and powers products such as Stripe Organizations and Customer and Payment Method Sharing among many others.
           </p>
         </div>
       </div>
