@@ -6,7 +6,7 @@ export default function Home() {
       <div className="mb-12 w-full xl:fixed xl:mb-0 xl:w-[500px]">
         <img
           className="border-border h-28 w-28 rounded-full border-2 xl:h-[184px] xl:w-[184px]"
-          src="../public/pfp.png"
+          src="/pfp.png"
           alt="profile picture"
         />
 
