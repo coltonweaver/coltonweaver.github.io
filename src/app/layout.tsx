@@ -6,7 +6,7 @@ import { ThemeProvider } from './theme-provider'
 const workSans = Work_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'John Doe',
+  title: 'Colton Weaver (cbw)',
 }
 
 export default function RootLayout({

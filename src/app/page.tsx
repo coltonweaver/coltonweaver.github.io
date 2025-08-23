@@ -1,5 +1,4 @@
 import LINKS from '@/links'
-import { ThemeSwitcher } from './theme-switcher'
 
 export default function Home() {
   return (
@@ -12,20 +11,15 @@ export default function Home() {
         />
 
         <div className="mt-8">
-          <h2 className="font-heading text-3xl sm:text-[44px]">John Doe</h2>
+          <h2 className="font-heading text-3xl sm:text-[44px]">Colton Weaver (cbw)</h2>
           <p className="font-base mt-6 text-base sm:text-xl">
-            This is the bento neobrutalism template. Check the{' '}
-            <a
-              className="font-heading underline"
-              href="https://github.com/neobrutalism-templates/bento"
-            >
-              github repo
-            </a>{' '}
-            for more info.
+            My name is Colton Weaver and this is my personal website. I am a Senior Software Engineer living in New York City, working at Stripe.
+            I work on what we call the "Compartments Graph", a service that is the source of truth for all entity relationships in the Stripe ecosystem
+            and powers products such as Stripe Organizations, Customer and Payment Method Sharing, and V2 Accounts.
+
+            This website uses the <a href='https://github.com/neobrutalism-templates/bento'>Bento template</a> from the neobrutalism-templates group.
           </p>
         </div>
-
-        <ThemeSwitcher />
       </div>
       <div className="justify-end xl:flex">
         <div
