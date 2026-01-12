@@ -8,7 +8,7 @@ type SocialMedia = (typeof websites)[number]
 
 type Link = {
   title: string
-  icon: any
+  icon: { src: string }
   link: string
   text?: string
 }
