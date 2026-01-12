@@ -34,6 +34,7 @@ export default function Home() {
               className="border-border shadow-shadow text-main-foreground rounded-base bg-main hover:translate-x-boxShadowX hover:translate-y-boxShadowY border-2 p-5 transition-all hover:shadow-none"
               key={key}
               target="_blank"
+              rel="noopener noreferrer"
               href={LINKS[key].link}
             >
               <img
