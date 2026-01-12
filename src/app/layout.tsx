@@ -7,6 +7,9 @@ const workSans = Work_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Colton Weaver (cbw)',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
