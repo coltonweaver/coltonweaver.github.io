@@ -12,12 +12,11 @@ export default function Home() {
 
         <div className="mt-8">
           <h2 className="font-heading text-3xl sm:text-[44px]">Colton Weaver (cbw)</h2>
-          <p className="font-base mt-6 text-base sm:text-l">
-            I am a Software Engineer based in New York City, currently employed at Stripe.<br /><br />
-
-            My areas of expertise include Distributed Systems, Domain/Data and API Modeling, and Operational Excellence. I serve as a Tech Lead on the Organizations and Auth Platform team, where I oversee the development and maintenance of the Compartments Graph—the authoritative source for all account relationships (merchants, customers, recipients, and related entities) at Stripe.<br /><br />
-
-            Should you wish to connect, please feel free to reach out via any of the links provided on this page.
+          <p className="font-heading mt-2 text-lg sm:text-xl text-foreground/70">
+            Staff Software Engineer at Stripe · New York City
+          </p>
+          <p className="font-base mt-4 text-base sm:text-l">
+            I lead the Compartments and Accounts Platform team at Stripe, where I own the Compartments Graph—the authoritative source for all account relationships across Stripe's merchant, customer, and partner ecosystem. My work sits at the intersection of distributed systems, API design, and platform reliability at scale.
           </p>
         </div>
       </div>
