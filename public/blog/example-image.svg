@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Example placeholder image">
+  <rect width="800" height="400" fill="#f4f4f0"/>
+  <g stroke="#000" stroke-width="3" fill="none">
+    <line x1="0" y1="0" x2="800" y2="400"/>
+    <line x1="800" y1="0" x2="0" y2="400"/>
+  </g>
+  <g transform="translate(400 200)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" fill="#000">
+    <text y="-6" font-size="28" font-weight="600">Example placeholder</text>
+    <text y="28" font-size="16" opacity="0.7">800 × 400 — drop a real image here</text>
+  </g>
+</svg>
