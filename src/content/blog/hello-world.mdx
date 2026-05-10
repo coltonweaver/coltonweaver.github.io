@@ -1,0 +1,75 @@
+---
+title: "Hello World — Blog Demo"
+date: "2026-05-10"
+description: "A placeholder post showing every formatting feature available in the blog: headings, code blocks, images, lists, quotes, and inline emphasis."
+tags: ["demo", "placeholder"]
+---
+
+**This is a placeholder post.** It exists to show every formatting feature available in the blog. Replace this content with a real post by editing this file (or adding a new one) in `src/content/blog/`.
+
+The blog supports standard Markdown — paragraphs, **bold**, _italic_, inline `code`, and [inline links](#) — alongside a few richer elements demonstrated below.
+
+## Headings, prose, and emphasis
+
+Body text is set in Work Sans at a comfortable reading size. Headings break up long-form posts into scannable sections; the table of contents (if added later) would be generated from these.
+
+### Subheadings work too
+
+Use `##` for top-level section headings and `###` for subsections. Keep the hierarchy shallow — most posts only need one or two levels.
+
+## Lists
+
+Unordered:
+
+- First item in a bullet list.
+- Items can wrap across multiple lines, and they keep their alignment cleanly thanks to the prose styles.
+- A third item, just to round things out.
+
+Ordered:
+
+1. Step one — start with the simplest version.
+2. Step two — add complexity only when it pays its keep.
+3. Step three — measure, then revisit.
+
+## Blockquote
+
+> Quotes hang off a chunky left border. Use them for short pull-quotes or for callouts you want to set apart from the surrounding prose.
+
+## Code blocks
+
+Code blocks are syntax-highlighted at build time by Shiki. Inline `code` picks up the same monospace family with a chunky border to match the rest of the design.
+
+```go
+// fenced code block — Go
+package main
+
+import "fmt"
+
+func greet(name string) string {
+	return fmt.Sprintf("hello, %s", name)
+}
+
+func main() {
+	fmt.Println(greet("world"))
+}
+```
+
+Other languages work too — Python, SQL, Rust, Java, Ruby — see `src/app/blog/[slug]/page.tsx` for the registered list.
+
+## Images and figures
+
+Images can be inlined with Markdown or wrapped in a `<figure>` for a caption. The frame uses the same chunky border + hard shadow as the rest of the site.
+
+![Replace this with a real image when you have one.](/blog/example-image.svg)
+
+Use the JSX form when you want an explicit caption distinct from the alt text:
+
+<MdxImage
+  src="/blog/example-image.svg"
+  alt="Placeholder figure used for the demo post."
+  caption="Figure 1 — caption text shown under the image."
+/>
+
+## That's it
+
+Once you have a real post to publish, drop a new file into `src/content/blog/<slug>.mdx` with the frontmatter (title, date, description, tags) and write away. The index page picks it up automatically at build time.

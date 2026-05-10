@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -39,7 +38,7 @@
   --spacing-boxShadowX: 4px;
   --spacing-boxShadowY: -4px;
   --spacing-reverseBoxShadowX: -4px;
-  --spacing-reverseBoxShadowY: --4px;
+  --spacing-reverseBoxShadowY: -4px;
   --radius-base: 5px;
   --shadow-shadow: var(--shadow);
   --font-weight-base: 400;
@@ -87,4 +86,80 @@ html.dark body::-webkit-scrollbar-thumb {
   body {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
+}
+
+/* MDX prose */
+.prose-cbw p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--foreground);
+  margin: 1em 0;
+}
+.prose-cbw h2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+.prose-cbw h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+.prose-cbw strong {
+  font-weight: 600;
+}
+.prose-cbw a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.prose-cbw ul,
+.prose-cbw ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+.prose-cbw ul { list-style: disc; }
+.prose-cbw ol { list-style: decimal; }
+.prose-cbw li { margin: 0.4em 0; line-height: 1.6; }
+.prose-cbw blockquote {
+  border-left: 4px solid var(--border);
+  padding-left: 1em;
+  margin: 1.2em 0;
+  color: oklch(from var(--foreground) l c h / 0.75);
+  font-style: italic;
+}
+
+/* Inline code */
+.prose-cbw :not(pre) > code {
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  font-size: 0.9em;
+  background: var(--secondary-background);
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+/* Shiki code blocks — chunky border + hard shadow over Shiki's own colors */
+.prose-cbw pre {
+  margin: 1.5em 0;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  overflow-x: auto;
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.prose-cbw pre code {
+  font-family: inherit;
+  background: transparent !important;
+  border: 0;
+  padding: 0;
+  display: block;
+  white-space: pre;
 }

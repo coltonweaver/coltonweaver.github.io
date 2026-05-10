@@ -1,4 +1,5 @@
 import LINKS from '@/links'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -11,12 +12,12 @@ export default function Home() {
         />
 
         <div className="mt-8">
-          <h2 className="font-heading text-3xl sm:text-[44px]">Colton Weaver (cbw)</h2>
+          <h2 className="font-heading text-3xl sm:text-[44px]">Colton Weaver</h2>
           <p className="font-heading mt-2 text-lg sm:text-xl text-foreground/70">
-            Staff Software Engineer at Stripe · New York City
+            Staff Software Engineer
           </p>
           <p className="font-base mt-4 text-base sm:text-l">
-            I lead the Compartments and Accounts Platform team at Stripe, where I own the Compartments Graph—the authoritative source for all account relationships across Stripe's merchant, customer, and partner ecosystem. My work sits at the intersection of distributed systems, API design, and platform reliability at scale.
+            I specialize in distributed systems, API design, and platform reliability at scale—and in building the product experiences on top of them. I'm currently at Stripe, where I lead the Compartments and Accounts Platform team and own the Compartments Graph—the authoritative source for all account relationships across Stripe.
           </p>
         </div>
       </div>
@@ -25,27 +26,40 @@ export default function Home() {
           id="grid-container"
           className="text-foreground grid w-full grid-cols-1 gap-7 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 lg:gap-8 xl:w-1/2 xl:pb-16"
         >
-          {Object.keys(LINKS).map((key) => (
-            <a
-              className="border-border shadow-shadow text-main-foreground rounded-base bg-main hover:translate-x-boxShadowX hover:translate-y-boxShadowY border-2 p-5 transition-all hover:shadow-none"
-              key={key}
-              target="_blank"
-              rel="noopener noreferrer"
-              href={LINKS[key].link}
-            >
-              <img
-                className="h-8 w-8 sm:h-10 sm:w-10"
-                src={LINKS[key].icon.src}
-                alt={LINKS[key].title}
-              />
-              <p className="font-heading mt-3 text-lg sm:text-xl">
-                {LINKS[key].title}
-              </p>
-              <p className="font-base mt-1 text-sm sm:text-base">
-                {LINKS[key].text}
-              </p>
-            </a>
-          ))}
+          {Object.keys(LINKS).map((key) => {
+            const L = LINKS[key]
+            const className =
+              'border-border shadow-shadow text-main-foreground rounded-base bg-main hover:translate-x-boxShadowX hover:translate-y-boxShadowY border-2 p-5 transition-all hover:shadow-none'
+            const inner = (
+              <>
+                <img
+                  className="h-8 w-8 sm:h-10 sm:w-10"
+                  src={L.icon.src}
+                  alt={L.title}
+                />
+                <p className="font-heading mt-3 text-lg sm:text-xl">{L.title}</p>
+                <p className="font-base mt-1 text-sm sm:text-base">{L.text}</p>
+              </>
+            )
+            if (L.internal) {
+              return (
+                <Link key={key} href={L.link} className={className}>
+                  {inner}
+                </Link>
+              )
+            }
+            return (
+              <a
+                key={key}
+                className={className}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={L.link}
+              >
+                {inner}
+              </a>
+            )
+          })}
         </div>
       </div>
     </div>
