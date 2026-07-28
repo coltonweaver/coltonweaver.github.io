@@ -47,9 +47,11 @@ const LINKS: { [key in SocialMedia]: Link } = {
     text: '@coltonweaver',
   },
   resume: {
+    // Built from LaTeX source in coltonweaver/resume; CI publishes the PDF to
+    // the rolling `latest` release, so this always serves the newest build.
     title: 'Resume',
     icon: resume,
-    link: './docs/cbw_resume.pdf',
+    link: 'https://github.com/coltonweaver/resume/releases/latest/download/cbw_resume.pdf',
     text: 'Resume PDF',
   },
 }
