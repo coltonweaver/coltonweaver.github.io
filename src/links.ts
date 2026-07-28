@@ -3,7 +3,6 @@ import linkedin from '../public/icons/linkedin.svg'
 import hackernews from '../public/icons/hackernews.svg'
 import bluesky from '../public/icons/bluesky.svg'
 import resume from '../public/icons/resume.svg'
-import blog from '../public/icons/blog.svg'
 
 type SocialMedia = (typeof websites)[number]
 
@@ -12,7 +11,6 @@ type Link = {
   icon: { src: string }
   link: string
   text?: string
-  internal?: boolean
 }
 
 const websites = [
@@ -21,7 +19,6 @@ const websites = [
   'hackernews',
   'bluesky',
   'resume',
-  'blog',
 ]
 
 const LINKS: { [key in SocialMedia]: Link } = {
@@ -54,13 +51,6 @@ const LINKS: { [key in SocialMedia]: Link } = {
     icon: resume,
     link: './docs/cbw_resume.pdf',
     text: 'Resume PDF',
-  },
-  blog: {
-    title: 'Blog',
-    icon: blog,
-    link: '/blog/',
-    text: 'Writing',
-    internal: true,
   },
 }
 

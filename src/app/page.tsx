@@ -1,5 +1,4 @@
 import LINKS from '@/links'
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -41,13 +40,6 @@ export default function Home() {
                 <p className="font-base mt-1 text-sm sm:text-base">{L.text}</p>
               </>
             )
-            if (L.internal) {
-              return (
-                <Link key={key} href={L.link} className={className}>
-                  {inner}
-                </Link>
-              )
-            }
             return (
               <a
                 key={key}
