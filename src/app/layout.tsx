@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: '%s · Colton Weaver',
   },
   description:
-    'Colton Weaver — Staff Software Engineer at Stripe. Distributed systems, API design, and platform reliability.',
+    'Colton Weaver — Member of Technical Staff at Anthropic. Distributed systems, API design, and platform reliability.',
   icons: { icon: '/favicon.ico' },
   alternates: {
     canonical: '/',
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: 'Colton Weaver',
     description:
-      'Staff Software Engineer at Stripe. Distributed systems, API design, and platform reliability.',
+      'Member of Technical Staff at Anthropic. Distributed systems, API design, and platform reliability.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Colton Weaver',
     description:
-      'Staff Software Engineer at Stripe. Distributed systems, API design, and platform reliability.',
+      'Member of Technical Staff at Anthropic. Distributed systems, API design, and platform reliability.',
   },
 }
 
