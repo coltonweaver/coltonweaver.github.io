@@ -23,7 +23,6 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.ico' },
   alternates: {
     canonical: '/',
-    types: { 'application/rss+xml': '/rss.xml' },
   },
   openGraph: {
     type: 'website',
