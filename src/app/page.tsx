@@ -13,10 +13,10 @@ export default function Home() {
         <div className="mt-8">
           <h2 className="font-heading text-3xl sm:text-[44px]">Colton Weaver</h2>
           <p className="font-heading mt-2 text-lg sm:text-xl text-foreground/70">
-            Staff Software Engineer
+            Member of Technical Staff
           </p>
           <p className="font-base mt-4 text-base sm:text-l">
-            I specialize in distributed systems, API design, and platform reliability at scale—and in building the product experiences on top of them. I'm currently at Stripe, where I lead the Compartments and Accounts Platform team and own the Compartments Graph—the authoritative source for all account relationships across Stripe.
+            I specialize in distributed systems, API design, and platform reliability at scale—and in building the product experiences on top of them. I'm currently at Anthropic, where I work on Memory and Search Infrastructure. Previously I was at Stripe, where I led the Compartments and Accounts Platform team and owned the Compartments Graph—the authoritative source for all account relationships across Stripe.
           </p>
         </div>
       </div>
