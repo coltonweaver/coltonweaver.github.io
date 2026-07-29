@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^16.2.6",
+    "next": "^16.2.11",
     "next-themes": "^0.4.6",
     "react": "19.1.1",
     "react-dom": "19.1.1"
@@ -21,9 +21,9 @@
     "@types/react": "19.1.11",
     "@types/react-dom": "19.1.7",
     "eslint": "^9.34.0",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "16.2.11",
     "eslint-config-prettier": "^10.1.8",
-    "postcss": "^8.5.14",
+    "postcss": "^8.5.18",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.12",
@@ -33,15 +33,18 @@
     "overrides": {
       "@types/react": "19.1.11",
       "@types/react-dom": "19.1.7",
-      "tar@7": "^7.5.11",
+      "tar@7": "^7.5.18",
       "picomatch@2": "^2.3.2",
       "picomatch@4": "^4.0.4",
       "minimatch@3": "^3.1.4",
       "flatted@3": "^3.4.2",
       "ajv@6": "^6.14.0",
-      "brace-expansion@1": "^1.1.13",
-      "js-yaml@4": "^4.1.1",
-      "postcss@8": "^8.5.10"
+      "brace-expansion@1": "^1.1.16",
+      "js-yaml@4": "^4.3.0",
+      "postcss@8": "^8.5.18",
+      "brace-expansion@5": "^5.0.7",
+      "sharp": "^0.35.0",
+      "@babel/core": "^7.29.6"
     },
     "ignoredBuiltDependencies": [
       "@tailwindcss/oxide",
