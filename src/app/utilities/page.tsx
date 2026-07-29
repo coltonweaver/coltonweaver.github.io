@@ -25,8 +25,7 @@ export default function UtilitiesPage() {
 
       <h1 className="font-heading mt-6 text-3xl sm:text-[44px]">Utilities</h1>
       <p className="font-base text-foreground/70 mt-2 text-base">
-        Small tools I built for myself. No ads, no tracking, and they run
-        entirely in your browser.
+        Small tools I built for myself.
       </p>
 
       <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
