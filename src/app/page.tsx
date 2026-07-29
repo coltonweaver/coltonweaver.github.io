@@ -44,8 +44,9 @@ export default function Home() {
               <a
                 key={key}
                 className={className}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(L.internal
+                  ? {}
+                  : { target: '_blank', rel: 'noopener noreferrer' })}
                 href={L.link}
               >
                 {inner}

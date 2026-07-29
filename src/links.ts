@@ -4,6 +4,7 @@ import hackernews from '../public/icons/hackernews.svg'
 import bluesky from '../public/icons/bluesky.svg'
 import x from '../public/icons/x.svg'
 import resume from '../public/icons/resume.svg'
+import utilities from '../public/icons/utilities.svg'
 
 type SocialMedia = (typeof websites)[number]
 
@@ -12,9 +13,12 @@ type Link = {
   icon: { src: string }
   link: string
   text?: string
+  /** Same-tab navigation for pages on this site; others open a new tab. */
+  internal?: boolean
 }
 
 const websites = [
+  'utilities',
   'github',
   'linkedin',
   'hackernews',
@@ -24,6 +28,13 @@ const websites = [
 ]
 
 const LINKS: { [key in SocialMedia]: Link } = {
+  utilities: {
+    title: 'Utilities',
+    icon: utilities,
+    link: '/utilities/',
+    text: 'Small tools I built',
+    internal: true,
+  },
   linkedin: {
     title: 'Linkedin',
     icon: linkedin,
