@@ -18,23 +18,16 @@ type Link = {
 }
 
 const websites = [
-  'utilities',
   'github',
   'linkedin',
   'hackernews',
   'bluesky',
   'x',
   'resume',
+  'utilities',
 ]
 
 const LINKS: { [key in SocialMedia]: Link } = {
-  utilities: {
-    title: 'Utilities',
-    icon: utilities,
-    link: '/utilities/',
-    text: 'Small tools I built',
-    internal: true,
-  },
   linkedin: {
     title: 'Linkedin',
     icon: linkedin,
@@ -74,6 +67,13 @@ const LINKS: { [key in SocialMedia]: Link } = {
     icon: resume,
     link: '/docs/cbw_resume.pdf',
     text: 'Resume PDF',
+  },
+  utilities: {
+    title: 'Utilities',
+    icon: utilities,
+    link: '/utilities/',
+    text: 'Small tools I built',
+    internal: true,
   },
 }
 
