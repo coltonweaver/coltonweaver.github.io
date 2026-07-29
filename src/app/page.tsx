@@ -16,7 +16,7 @@ export default function Home() {
             Member of Technical Staff
           </p>
           <p className="font-base mt-4 text-base sm:text-l">
-            I'm a software engineer working on distributed systems and infrastructure. I'm at Anthropic now. Before that I spent four years at Stripe, where I led the Compartments and Accounts Platform team and built the account model behind Stripe Organizations. Earlier I worked on AWS Lambda and API Gateway.
+            I'm a software engineer working on distributed systems and product infrastructure. I'm at Anthropic now. Before that I spent four years at Stripe, where I led the Compartments and Accounts Platform team and built the account model behind Stripe Organizations. Earlier I worked on AWS Lambda and API Gateway.
           </p>
         </div>
       </div>
