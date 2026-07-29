@@ -16,7 +16,7 @@ export default function Home() {
             Member of Technical Staff
           </p>
           <p className="font-base mt-4 text-base sm:text-l">
-            I build the systems that other systems depend on—distributed infrastructure, API design, and the kind of platform reliability you only notice when it's missing. I'm currently at Anthropic, working on the Memory and Search Infrastructure behind Claude. Before that I spent four years at Stripe leading the Compartments and Accounts Platform team, where I owned the Compartments Graph—the authoritative source for every account relationship at Stripe—and helped take Organizations from zero users to over 100,000.
+            I'm a software engineer working on distributed systems and infrastructure. I'm at Anthropic now. Before that I spent four years at Stripe, where I led the Compartments and Accounts Platform team and built the account model behind Stripe Organizations. Earlier I worked on AWS Lambda and API Gateway.
           </p>
         </div>
       </div>
