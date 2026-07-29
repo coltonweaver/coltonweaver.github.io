@@ -2,6 +2,7 @@ import github from '../public/icons/github.svg'
 import linkedin from '../public/icons/linkedin.svg'
 import hackernews from '../public/icons/hackernews.svg'
 import bluesky from '../public/icons/bluesky.svg'
+import x from '../public/icons/x.svg'
 import resume from '../public/icons/resume.svg'
 
 type SocialMedia = (typeof websites)[number]
@@ -18,6 +19,7 @@ const websites = [
   'linkedin',
   'hackernews',
   'bluesky',
+  'x',
   'resume',
 ]
 
@@ -45,6 +47,12 @@ const LINKS: { [key in SocialMedia]: Link } = {
     icon: bluesky,
     link: 'https://bsky.app/profile/coltonweaver.bsky.social',
     text: '@coltonweaver',
+  },
+  x: {
+    title: 'X',
+    icon: x,
+    link: 'https://x.com/coltonbweaver',
+    text: '@coltonbweaver',
   },
   resume: {
     // Built from LaTeX source in coltonweaver/resume and pulled from that
