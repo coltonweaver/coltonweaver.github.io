@@ -3,3 +3,6 @@ out/
 .next/
 *.tsbuildinfo
 
+
+# Pulled from the coltonweaver/resume release at build time
+public/docs/cbw_resume.pdf

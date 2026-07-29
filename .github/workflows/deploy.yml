@@ -3,6 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ master ]
+  # The resume PDF is fetched at build time from the coltonweaver/resume
+  # release, so rebuild daily to pick up resume changes without a site commit.
+  schedule:
+    - cron: '17 8 * * *'
   workflow_dispatch:
 
 permissions:

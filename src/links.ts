@@ -47,11 +47,13 @@ const LINKS: { [key in SocialMedia]: Link } = {
     text: '@coltonweaver',
   },
   resume: {
-    // Built from LaTeX source in coltonweaver/resume; CI publishes the PDF to
-    // the rolling `latest` release, so this always serves the newest build.
+    // Built from LaTeX source in coltonweaver/resume and pulled from that
+    // repo's `latest` release at build time (see scripts/fetch-resume.mjs).
+    // Served from this domain so browsers render it inline rather than
+    // downloading it, which is what GitHub's release headers force.
     title: 'Resume',
     icon: resume,
-    link: 'https://github.com/coltonweaver/resume/releases/latest/download/cbw_resume.pdf',
+    link: '/docs/cbw_resume.pdf',
     text: 'Resume PDF',
   },
 }
