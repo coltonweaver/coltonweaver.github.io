@@ -69,11 +69,38 @@ function decodeState(hash: string): { people: Person[]; amount: string } | null 
   }
 }
 
+/**
+ * The Clipboard API needs a secure context and a user gesture; fall back to a
+ * scratch textarea so a copy still lands on older or non-HTTPS browsers.
+ */
+async function copyText(text: string): Promise<boolean> {
+  try {
+    await navigator.clipboard.writeText(text)
+    return true
+  } catch {
+    try {
+      const scratch = document.createElement('textarea')
+      scratch.value = text
+      scratch.setAttribute('readonly', '')
+      scratch.style.position = 'fixed'
+      scratch.style.opacity = '0'
+      document.body.appendChild(scratch)
+      scratch.select()
+      const ok = document.execCommand('copy')
+      document.body.removeChild(scratch)
+      return ok
+    } catch {
+      return false
+    }
+  }
+}
+
 export default function Splitter() {
   const [people, setPeople] = useState<Person[]>(DEFAULT_PEOPLE)
   const [amount, setAmount] = useState('')
   const [loaded, setLoaded] = useState(false)
-  const [copied, setCopied] = useState(false)
+  // Which thing was just copied — a row key or 'link'. Null once it expires.
+  const [copied, setCopied] = useState<string | null>(null)
 
   // A shared link wins over whatever this device has saved; otherwise fall
   // back to the last-used incomes so they never need retyping.
@@ -108,8 +135,8 @@ export default function Splitter() {
   }, [people, loaded])
 
   useEffect(() => {
-    if (!copied) return
-    const t = setTimeout(() => setCopied(false), 2000)
+    if (copied === null) return
+    const t = setTimeout(() => setCopied(null), 2000)
     return () => clearTimeout(t)
   }, [copied])
 
@@ -146,12 +173,16 @@ export default function Splitter() {
 
   const copyLink = async () => {
     const url = `${window.location.origin}${window.location.pathname}#${encodeState(people, amount)}`
-    try {
-      await navigator.clipboard.writeText(url)
-    } catch {
-      window.location.hash = encodeState(people, amount)
-    }
-    setCopied(true)
+    if (await copyText(url)) setCopied('link')
+    // Nothing landed on the clipboard, so put the state in the address bar
+    // where it can at least be copied by hand.
+    else window.location.hash = encodeState(people, amount)
+  }
+
+  // Copies a bare number rather than the formatted string, so it pastes
+  // straight into Venmo or a banking app.
+  const copyShare = async (index: number, share: number) => {
+    if (await copyText(share.toFixed(2))) setCopied(`row-${index}`)
   }
 
   const inputClass =
@@ -248,8 +279,16 @@ export default function Splitter() {
                 <td className="py-2 text-right tabular-nums">
                   {row.percent.toFixed(1)}%
                 </td>
-                <td className="font-heading py-2 text-right text-lg tabular-nums">
-                  {usd.format(row.share)}
+                <td className="py-2 text-right">
+                  <button
+                    type="button"
+                    onClick={() => copyShare(i, row.share)}
+                    title="Click to copy"
+                    aria-label={`Copy ${row.name}'s share, ${usd.format(row.share)}`}
+                    className="font-heading rounded-base hover:bg-main-foreground/10 focus:ring-ring -mr-1 inline-block min-w-[6rem] px-1 text-right text-lg tabular-nums underline decoration-dotted underline-offset-4 outline-none focus:ring-2"
+                  >
+                    {copied === `row-${i}` ? 'Copied' : usd.format(row.share)}
+                  </button>
                 </td>
               </tr>
             ))}
@@ -264,6 +303,10 @@ export default function Splitter() {
             </tr>
           </tfoot>
         </table>
+
+        <p className="font-base mt-4 text-sm">
+          Tap an amount to copy it as a plain number.
+        </p>
       </div>
 
       <button
@@ -271,7 +314,7 @@ export default function Splitter() {
         onClick={copyLink}
         className="font-heading border-border shadow-shadow rounded-base bg-secondary-background hover:translate-x-boxShadowX hover:translate-y-boxShadowY mt-6 w-full border-2 p-3 transition-all hover:shadow-none"
       >
-        {copied ? 'Link copied' : 'Copy shareable link'}
+        {copied === 'link' ? 'Link copied' : 'Copy shareable link'}
       </button>
       <p className="font-base text-foreground/70 mt-2 text-sm">
         The link carries the names and numbers in its URL so the page opens
